@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Mood</title>
+    <style>
+        
+        body {
+         
+            font-family: 'verdana';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom,rgb(194, 52, 52), #333333);
+        }
+        
+
+        form {
+            border-radius: 8px;
+            padding: 20px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            height: 80px;
+            width: 100px;
+        }
+
+        label {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        input::placeholder {
+            color:grey;
+        }
+
+        button {
+            background-color: #0a3aa1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+        }
+      
+    </style>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <h1>Current Mood</h1>
+
+        <img src="IMG1.jpg" alt="Avatar image">
+
+        <label for="mood">How are you feeling?</label>
+        <input type="text" id="mood" name="mood" placeholder="Describe your mood">
+
+        <label for="emotions">What emotions are you experiencing at the moment?</label>
+        <input type="text" id="emotions" name="emotions" placeholder="Happy, sad, angry...">
+
+        <label for="reason">What makes you feel like that?</label>
+        <input type="text" id="reason" name="reason" placeholder="Explain the reason">
+
+        <label for="frequency">How often do you feel like this?</label>
+        <select id="frequency" name="frequency">
+            <option value="1">1 (very rarely)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10 (Very often)</option>
+        </select>
+
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </div>
+    </form>
+
+</body>
+</html>
